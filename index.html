@@ -67,9 +67,66 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </style>
 
 <body>
+<div id="header" class="w3-container w3-flat-carrot">
+	<h1>Lupus or Rosacea?</h1> <!-- creating an overall question diffrent from app assignmnet three --> 
+</div>
 	
-	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
-	REPLACE THIS TEXT
+<div id="content" class="w3-container">
+	<p>Are you feeling like you might have lupus but wonder if it is just rosacea. Answer a few short questions to find out!</p> <!-- changing the text to pertain to the specific question I am asking to help patients differentiate between lupus symptoms and rosacea symptoms -->
+	
+	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+
+<div class="page" id="one">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 1</h1>
+	</div>
+	
+    	<div id="content" class="w3-container">
+        <p>Are your eyes watery or itchy?</p> <!-- making the first question -->   
+    	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a> <!-- should send the person to the next page and record their answer --> 
+	<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> No </a> 
+	</div>
+</div>
+
+<div class="page" id="two">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 2</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Do you have a fever?</p> <!-- making the second question --> 
+	<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- should send the person to the next page while recording their answer --> 
+	<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
+	</div>
+</div>	
+
+<div class="page" id="three">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 3</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Do you have a sore throat?</p> <!-- making the third question --> 
+	<a href="#four" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a> <!-- should send the user to the fourth page and record their answer --> 
+	<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
+	</div>
+</div>	
+
+<div class="page" id="four">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 4</h1>
+	</div>
+	
+	<div id="content" class="w3-container">
+		<p>Are your symptoms seasonal or chronic?</p> <!-- making the fourth question --> 
+	<a href="#five" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a> <!-- should go to fifth page and record the users yes or no respone --> 
+	<a href="#five" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
+	</div>
+</div>
 	
 </body>
 </html>
